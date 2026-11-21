@@ -6,7 +6,7 @@
     <title>Celine Trade Concept</title>
     <meta
       name="description"
-      content="Celine Trade Concept developer site for 00數簿 (00 Ledger) and related apps."
+      content="Celine Trade Concept developer site for 00數簿、小店盤數、兔兔躲貓貓. Shared app-ads.txt for AdMob."
     />
     <style>
       :root {
@@ -24,7 +24,8 @@
       body {
         margin: 0;
         min-height: 100vh;
-        font-family: "Segoe UI", "PingFang TC", "Noto Sans TC", sans-serif;
+        font-family: "Segoe UI", "PingFang TC", "Noto Sans TC", "Microsoft JhengHei",
+          sans-serif;
         color: var(--ink);
         background:
           radial-gradient(circle at top left, #f2d8ab 0, transparent 42%),
@@ -47,13 +48,17 @@
         font-size: 1.75rem;
         line-height: 1.25;
       }
+      h2 {
+        margin: 22px 0 10px;
+        font-size: 1.05rem;
+      }
       p {
         margin: 0 0 14px;
         color: var(--muted);
         line-height: 1.6;
       }
       ul {
-        margin: 18px 0 0;
+        margin: 0;
         padding: 0;
         list-style: none;
         display: grid;
@@ -67,6 +72,7 @@
       a:hover {
         text-decoration: underline;
       }
+      .app,
       .link {
         display: block;
         padding: 12px 14px;
@@ -74,9 +80,22 @@
         background: var(--paper);
         border: 1px solid var(--line);
       }
+      .app strong {
+        display: block;
+        color: var(--ink);
+        margin-bottom: 2px;
+      }
+      .app span {
+        color: var(--muted);
+        font-weight: 500;
+        font-size: 0.92rem;
+      }
       .note {
         margin-top: 18px;
         font-size: 0.92rem;
+      }
+      code {
+        font-size: 0.9em;
       }
     </style>
   </head>
@@ -85,23 +104,46 @@
       <section class="card">
         <h1>Celine Trade Concept</h1>
         <p>
-          開發者網站 · Developer site for
-          <strong>00數簿 (00 Ledger)</strong> and related apps.
+          開發者網站 · Developer site。以下三個 App 共用同一個 AdMob
+          publisher 與 <code>app-ads.txt</code>。
         </p>
+
+        <h2>Apps</h2>
         <ul>
-          <li>
-            <a class="link" href="./app-ads.txt">app-ads.txt</a>
+          <li class="app">
+            <strong>00數簿（00 Ledger）</strong>
+            <span>記帳／Ledger</span>
           </li>
-          <li>
-            <a class="link" href="./terms.html">Terms</a>
+          <li class="app">
+            <strong>小店盤數（ShopBudget）</strong>
+            <span>小店營運記帳</span>
           </li>
-          <li>
-            <a class="link" href="./bunnyseek-terms.html">BunnySeek Terms</a>
+          <li class="app">
+            <strong>兔兔躲貓貓（Bunny Seek）</strong>
+            <span>遊戲</span>
           </li>
         </ul>
+
+        <h2>Links</h2>
+        <ul>
+          <li>
+            <a class="link" href="./app-ads.txt">app-ads.txt（三個 App 共用）</a>
+          </li>
+          <li>
+            <a class="link" href="./terms.html"
+              >服務條款 · 00 Ledger / 小店盤數</a
+            >
+          </li>
+          <li>
+            <a class="link" href="./bunnyseek-terms.html"
+              >服務條款 · 兔兔躲貓貓</a
+            >
+          </li>
+        </ul>
+
         <p class="note">
-          This page exists so the Play Console developer website root resolves
-          correctly for AdMob <code>app-ads.txt</code> verification.
+          Shared AdMob line：
+          <code>google.com, pub-8777616388275749, DIRECT, f08c47fec0942fa0</code>
         </p>
       </section>
     </main>
