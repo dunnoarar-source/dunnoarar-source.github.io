@@ -6,7 +6,7 @@
     <title>Celine Trade Concept</title>
     <meta
       name="description"
-      content="Celine Trade Concept developer site for 00數簿、小店盤數、兔兔躲貓貓. Shared app-ads.txt for AdMob."
+      content="Celine Trade Concept developer site for 00數簿、小店盤數、兔兔躲貓貓. Shared app-ads.txt and terms for each app."
     />
     <style>
       :root {
@@ -80,14 +80,26 @@
         background: var(--paper);
         border: 1px solid var(--line);
       }
+      .app {
+        display: grid;
+        gap: 8px;
+      }
       .app strong {
         display: block;
         color: var(--ink);
-        margin-bottom: 2px;
       }
-      .app span {
+      .app .meta {
         color: var(--muted);
         font-weight: 500;
+        font-size: 0.92rem;
+      }
+      .app .terms {
+        display: inline-block;
+        padding: 8px 12px;
+        border-radius: 999px;
+        background: #fff;
+        border: 1px solid var(--line);
+        width: fit-content;
         font-size: 0.92rem;
       }
       .note {
@@ -104,40 +116,33 @@
       <section class="card">
         <h1>Celine Trade Concept</h1>
         <p>
-          開發者網站 · Developer site。以下三個 App 共用同一個 AdMob
-          publisher 與 <code>app-ads.txt</code>。
+          開發者網站 · Developer site。三個 App 共用同一個
+          <code>app-ads.txt</code>；每個 App 都有對應服務條款（Terms）。
         </p>
 
-        <h2>Apps</h2>
+        <h2>Apps &amp; Terms</h2>
         <ul>
           <li class="app">
             <strong>00數簿（00 Ledger）</strong>
-            <span>記帳／Ledger</span>
+            <span class="meta">記帳／Ledger</span>
+            <a class="terms" href="./terms.html">服務條款 Terms</a>
           </li>
           <li class="app">
             <strong>小店盤數（ShopBudget）</strong>
-            <span>小店營運記帳</span>
+            <span class="meta">小店營運記帳</span>
+            <a class="terms" href="./terms.html">服務條款 Terms</a>
           </li>
           <li class="app">
             <strong>兔兔躲貓貓（Bunny Seek）</strong>
-            <span>遊戲</span>
+            <span class="meta">遊戲</span>
+            <a class="terms" href="./bunnyseek-terms.html">服務條款 Terms</a>
           </li>
         </ul>
 
-        <h2>Links</h2>
+        <h2>AdMob</h2>
         <ul>
           <li>
             <a class="link" href="./app-ads.txt">app-ads.txt（三個 App 共用）</a>
-          </li>
-          <li>
-            <a class="link" href="./terms.html"
-              >服務條款 · 00 Ledger / 小店盤數</a
-            >
-          </li>
-          <li>
-            <a class="link" href="./bunnyseek-terms.html"
-              >服務條款 · 兔兔躲貓貓</a
-            >
           </li>
         </ul>
 
